@@ -56,9 +56,13 @@ Notes-keeper/
 │ └── package.json
 │
 └── README.md
-Backend Setup
+
+Backend Setup:
+
 cd Backend
+
 npm install
+
 Create .env:
 PORT=5000
 MONGODB_URI=YOUR_MONGO_ATLAS_URI
@@ -88,5 +92,4 @@ HEMASAI
 Full Stack & AI/ML Developer
 GitHub: https://github.com/HEMASAI1
 
-## 📁 Folder Structure
 
