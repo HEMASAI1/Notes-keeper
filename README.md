@@ -57,9 +57,6 @@ Notes-keeper/
 bash
 cd Backend
 npm install
-# create Backend/.env with:
-# PORT=5000
-# MONGODB_URI=<your MongoDB Atlas connection string>
 npm run dev
 
 2. Frontend
@@ -79,6 +76,7 @@ Deployment: frontend (Vercel) + backend (Railway / Render)
 Author
 
 HEMASAI — Full-stack developer
+
 GitHub: https://github.com/HEMASAI1
 
 
