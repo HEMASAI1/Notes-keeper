@@ -1,0 +1,136 @@
+/* index.css - replace existing */
+:root{
+  --bg:#f6f7f9;
+  --card:#ffffff;
+  --muted:#7a7a7a;
+  --accent:#2563eb;
+  --border:#e6e8ec;
+  --chip-bg:#eef6ff;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: #111;
+  -webkit-font-smoothing:antialiased;
+}
+
+.app {
+  max-width: 980px;
+  margin: 28px auto;
+  padding: 20px;
+}
+
+.header {
+  text-align:center;
+  margin-bottom: 18px;
+}
+.header h1 {margin:0; font-weight:700; font-size:32px; letter-spacing:-0.5px}
+
+.grid {
+  display:grid;
+  grid-template-columns: 1fr 360px;
+  gap:18px;
+  align-items:start;
+}
+
+/* single column on small screens */
+@media (max-width:900px){
+  .grid{grid-template-columns:1fr}
+}
+
+/* card */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius:10px;
+  padding:14px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.04);
+}
+
+/* form */
+.note-form input, .note-form textarea {
+  width:100%;
+  border:1px solid var(--border);
+  padding:10px 12px;
+  border-radius:6px;
+  font-size:14px;
+  margin-bottom:10px;
+  background:transparent;
+}
+.note-form textarea { min-height:84px; resize:vertical }
+.btn {
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  padding:8px 12px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+.btn:active{ transform: translateY(1px) }
+.btn.ghost { background:transparent; color:var(--accent); border:1px solid var(--accent) }
+
+/* preview */
+.preview {
+  margin-top:8px;
+  padding:10px;
+  background:#fafcff;
+  border:1px dashed #e2efff;
+  border-radius:8px;
+  color:#123;
+  font-size:14px;
+}
+
+/* search */
+.search {
+  display:flex;
+  gap:8px;
+  align-items:center;
+}
+.search input {
+  flex:1;
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid var(--border);
+}
+
+/* notes list */
+.notes-list { margin-top:12px }
+.note-item {
+  display:block;
+  padding:12px;
+  border-radius:8px;
+  border:1px solid var(--border);
+  margin-bottom:10px;
+  background: #fff;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.note-item:hover{ transform: translateY(-3px); box-shadow: 0 10px 30px rgba(16,24,40,0.06) }
+.note-meta { display:flex; justify-content:space-between; align-items:center; gap:12px }
+.note-title { margin:0; font-size:16px; font-weight:700 }
+.note-time { color:var(--muted); font-size:12px }
+
+/* chips */
+.chips { margin-top:8px; display:flex; gap:8px; flex-wrap:wrap }
+.chip {
+  background:var(--chip-bg);
+  color:var(--accent);
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:12px;
+  cursor:pointer;
+  border:1px solid rgba(37,99,235,0.08);
+}
+
+/* actions */
+.actions { margin-top:10px; display:flex; gap:8px }
+.small { padding:6px 8px; font-size:13px; border-radius:8px }
+
+/* inline edit fields */
+.inline-input { width:100%; padding:8px 10px; margin-bottom:8px; border:1px solid var(--border); border-radius:6px }
+.empty { color:var(--muted) }
+
