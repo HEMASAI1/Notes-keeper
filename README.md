@@ -53,16 +53,18 @@ Notes-keeper/
 
 ## Setup (local)
 
-1. Backend
+1. Backend: 
 bash
-cd Backend
-npm install
-npm run dev
+--cd Backend
+--npm install
+--npm run dev
 
-2. Frontend
-cd ../frontend
-npm install
-npm start
+2. Frontend:
+--cd ../frontend
+--npm install
+--npm start
+
+
 # open http://localhost:3000
 
 Next improvements
